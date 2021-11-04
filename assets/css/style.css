@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+/* 
+Die verwendete Schriftart: Raleway
+Die Farbe des Button “Read more” ist: #745cf9
+Die Farbe des Button:hover “Read more” ist: #5234f9
+Die Farbe der <p> ist: #8c979e
+Die Farbe der <h2> ist: #0e1015 
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+
+header{
+    height: 76px;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #999;
+    border-top: 2px solid #999;
+    background-color: #fff;
+    padding: 1.55%;
+    align-items: baseline;
+    width: 100%;
+    position: fixed;
+    left: 0;
+
+}
+
+header nav ul {
+    display: flex; 
+    list-style: none; 
+    justify-content: space-between; 
+    width: 50%; 
+}
+
+nav ul li{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a{
+    display: flex;
+    color: #333;
+}
+
+nav ul li a:hover{
+    color: #337ab7;
+}
+
+a{
+    text-decoration: none;
+}
+
+#demo{
+    display: flex;
+    font-size: 24px;
+    color: #666;
+}
+
+#demo:hover{
+    color: #333;
+}
+
+#articleOne{
+    text-align: center;
+    padding: 10% 0 10.1% 0;
+    color: #fff;
+    color: rgba(255,255,255,0.7);
+}
+
+#articleOne h1{
+    padding: 7% 0 3% 0;
+    font-size: 8vh;
+}
+
+#articleOne p{
+    padding-bottom: 2%;
+}
+
+#articleOne div{
+    padding: 0 0 1% 0;
+}
+
+#articleTwo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10% 5% 0% 5%;
+}
+
+#articleTwo img{
+    width: 50vw;
+}
+
+#articleTwo div:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#articleTwo h1{
+    color: grey;
+}
+
+#articleTwo p{
+    padding: 8% 0;
+    line-height: 25px;
+}
+
+#sectionOne{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10% 5% 0 5%;
+    background-color: rgb(244,244,244);
+    margin-top: 5%;
+}
+
+#sectionOne img{
+    width: 50vw;
+}
+
+#sectionOne div:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#sectionOne h1{
+    color: grey;
+}
+
+#sectionOne p{
+    padding: 8% 0;
+    line-height: 25px;
+}
+
+#sectionTwo{
+    text-align: center;
+    color: #fff;
+}
+
+#sectionTwo h1{
+    font-size: 8vh;
+    padding: 5% 0 3% 0;
+}
+
+#sectionTwo p{
+    font-size: 2vh;
+    width: 62%;
+    margin: 0 auto;
+    padding: 0 0 2% 0;
+    line-height: 25px;
+}
+
+#sectionThree{
+    background-color: rgb(244,244,244);
+    font-size: 4vh;
+    padding: 6% 0 0 0;
+    text-align: center;
+    color: grey;
+}
+
+#sectionThree h2{
+    color: #000;
+}
+
+#sectionThree p{
+    width: 62%;
+    margin: 0 auto;
+    font-size: 2vh;
+    padding: 1% 0 2% 0;
+}
+
+#sectionThree div{
+    padding: 5% 0 0 0;
+}
+
+#articleThree{
+    background-color: rgb(14,16,21);
+    margin-top: -6px;
+    padding: 0 0 5% 0;
+    color: #fff;
+    text-align: center;
+}
+
+#articleThree h2{
+    font-size: 4vh;
+    padding: 7% 0 2% 0;
+}
+
+#articleThree p{
+    font-size: 2vh;
+    padding: 0 0 5% 0;
+}
+
+#gridOne{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px 250px;
+}
+
+#gridOne img{
+    height: 100%;
+    width: 100%;
+}
+
+/* == Buttons == */
+
+#rm{
+    background-color: #745cf9;
+    border: none;
+    padding: 1% 2.8%;
+    color: #fff
+}
+
+#rm:hover{
+    background-color: #5234f9;
+}
+
+#dn{
+    border: 1px solid #fff;
+    padding: 1% 2%;
+    background-color: transparent;
+    color: #fff;
+}
+
+/* PARALLAX */
+
+.parallax1{
+    background: url(../img/parallax1.jpeg) center/cover no-repeat;
+    min-height: 50vh;
+    background-attachment: fixed;
+}
+
+.parallax2{
+    background: url(../img/parallax2.jpeg) center/cover no-repeat;
+    min-height: 50vh;
+    background-attachment: fixed;
+}
+
+/* Hover und so */
+
+#bob{
+    display: flex;
+    position: relative;
+    top: -294px;
+    color: white;
+    font-size: 4vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0;
+    background: rgba(0,0,0,0.5);
+    cursor: pointer;
+	transition: all 300ms ease-out;
+    height: 250px;
+    width: 360px;
+    justify-content: center;
+    align-items: center;
+}
+
+#gridOne div:hover #bob{
+	transform: translateY(40px);
+    opacity: 1;
+}
